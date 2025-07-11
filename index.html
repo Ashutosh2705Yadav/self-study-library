@@ -4,41 +4,178 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Self-Study Library</title>
-<link rel="stylesheet" href="css/styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.7;
+    color: #222;
+    background-color: #fffdf8;
+  }
+
+  header {
+    background-color: #2E7D32;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  section {
+    margin: 2.5rem 0;
+  }
+
+  section h2 {
+    color: #2E7D32;
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+  }
+
+  section p, section li {
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    padding: 0.4rem 0;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    background-color: #2E7D32;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .images {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .images img {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.7rem;
+    }
+    section h2 {
+      font-size: 1.4rem;
+    }
+  }
+</style>
 </head>
 <body>
 
-<header>
-  <h1>Welcome to Self-Study Library</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="facilities.html">Facilities</a>
-    <a href="membership.html">Membership</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    <header>
+        <h1>Welcome to Self-Study Library</h1>
+        <p>A calm & inspiring space to learn, focus, and achieve your dreams — right in your village!</p>
+      
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="membership.html">Membership</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
 
-<main>
+<div class="container">
+
   <section>
     <h2>About Us</h2>
-    <p>Our library provides a quiet, focused environment for students preparing for exams like school boards, police recruitment, and competitive exams. Come and study without distractions!</p>
+    <p>
+      Our library is a quiet and affordable study space for students, aspirants, and learners in our rural community.
+      Whether you’re preparing for your school exams, government jobs like police, SSC, or just want a distraction-free environment,
+      our library is here for you.
+    </p>
+
+    <div class="images">
+      <img src="https://source.unsplash.com/400x250/?library,study" alt="Library Image 1">
+      <img src="https://source.unsplash.com/400x250/?students,learning" alt="Library Image 2">
+    </div>
   </section>
 
   <section>
-    <h2>Why Choose Us?</h2>
+    <h2>Why Choose Our Library?</h2>
     <ul>
-      <li>Peaceful environment</li>
-      <li>Wi-Fi and power backup</li>
-      <li>Comfortable seating & AC</li>
-      <li>Affordable membership plans</li>
+      <li>📚 Calm & clean atmosphere</li>
+      <li>💺 Comfortable seating</li>
+      <li>⚡ Electricity backup & lights for evening study</li>
+      <li>🌐 Free Wi-Fi access (if available)</li>
+      <li>👨‍🎓 Supportive community of learners</li>
     </ul>
   </section>
-</main>
+
+  <section>
+    <h2>Our Facilities</h2>
+    <p>
+      We provide all the basic facilities you need to concentrate on your goals — even in a rural setting —
+      at a low and affordable cost. You bring the books, we provide the space.
+    </p>
+
+    <div class="images">
+      <img src="https://source.unsplash.com/400x250/?classroom,desk" alt="Library Facility">
+      <img src="https://source.unsplash.com/400x250/?bookshelf,study" alt="Bookshelf">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Join Us Today!</h2>
+    <p>
+      Visit us during our open hours and take the first step toward your success.
+    </p>
+    <a href="#" class="button">Contact Us</a>
+  </section>
+
+</div>
 
 <footer>
-  <p>&copy; 2025 Self-Study Library. All rights reserved.</p>
+  <p>© 2025 Self-Study Library — Empowering Rural Learners</p>
 </footer>
 
 </body>
